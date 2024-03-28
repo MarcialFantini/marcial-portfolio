@@ -14,7 +14,7 @@ export const Works = () => {
         {projects.map((project, index) => {
           return (
             <article
-              key={index}
+              key={project.title + index}
               className=" border-black border-x-2 border-y-2 relative flex items-end justify-center overflow-hidden rounded-2xl"
             >
               <h4 className=" absolute p-4 bg-[rgb(0,0,0,0.2)] backdrop-blur-sm w-full text-center z-10 text-base">

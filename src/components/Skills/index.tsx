@@ -14,11 +14,8 @@ export const Skills = () => {
       >
         {skills.map((skill, index) => {
           return (
-            <Tooltip content={skill.title}>
-              <picture
-                className=" border-white border-x-2 border-y-2 cursor-pointer flex items-center justify-center aspect-square max-h-[100px] bg-[rgb(10,25,59)] p-4 rounded-2xl transition-all hover:rotate-[25deg]"
-                key={index}
-              >
+            <Tooltip key={index + skill.title} content={skill.title}>
+              <picture className=" border-white border-x-2 border-y-2 cursor-pointer flex items-center justify-center aspect-square max-h-[100px] bg-[rgb(10,25,59)] p-4 rounded-2xl transition-all hover:rotate-[25deg]">
                 <Image
                   className=" w-full h-full object-cover"
                   src={skill.src}

@@ -16,7 +16,7 @@ export const Skills = () => {
           return (
             <Tooltip content={skill.title}>
               <picture
-                className="cursor-pointer flex items-center justify-center aspect-square max-h-[100px] bg-[rgb(10,25,59)] p-4 rounded-2xl transition-all hover:rotate-[25deg]"
+                className=" border-white border-x-2 border-y-2 cursor-pointer flex items-center justify-center aspect-square max-h-[100px] bg-[rgb(10,25,59)] p-4 rounded-2xl transition-all hover:rotate-[25deg]"
                 key={index}
               >
                 <Image

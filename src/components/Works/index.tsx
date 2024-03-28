@@ -10,11 +10,14 @@ export const Works = () => {
       >
         Mis últimos proyectos
       </h2>
-      <div className=" grid grid-cols-2 gap-4">
-        {projects.map((project) => {
+      <div className=" grid md:grid-cols-2 gap-4">
+        {projects.map((project, index) => {
           return (
-            <article className=" relative flex items-end justify-center overflow-hidden rounded-2xl">
-              <h4 className=" absolute p-4 bg-[rgb(0,0,0,0.4)] w-full text-center z-40">
+            <article
+              key={index}
+              className=" border-black border-x-2 border-y-2 relative flex items-end justify-center overflow-hidden rounded-2xl"
+            >
+              <h4 className=" absolute p-4 bg-[rgb(0,0,0,0.2)] backdrop-blur-sm w-full text-center z-10 text-base">
                 {project.title}
               </h4>
 

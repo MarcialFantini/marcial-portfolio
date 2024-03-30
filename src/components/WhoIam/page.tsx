@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export const WhoIam = () => {
   return (
-    <article className="w-[95%] m-auto min-h-[400px] gap-2 md:grid md:grid-cols-6 my-[40px] ">
+    <article className="w-[95%] max-w-[1200px] m-auto  min-h-[400px] gap-2 md:grid md:grid-cols-6 my-[40px] ">
       <header className="flex flex-col items-start justify-center w-full h-full p-2 md:col-start-1 md:col-end-5">
         <h2 className=" text-2xl">Soy Marcial</h2>
         <h1 className=" my-4 text-4xl">

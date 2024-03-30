@@ -1,11 +1,22 @@
 import Image from "next/image";
 import { skills } from "./skills";
 import { Tooltip } from "@nextui-org/react";
+import srcFlower from "../../../public/image/flower.png";
 
 export const Skills = () => {
   return (
-    <div className=" bg-gradient-to-r from-[rgb(244,114,182,0.4)] p-[40px] rounded-lg">
-      <h2 className=" text-center text-purple-500 text-4xl my-12">
+    <div className="  bg-gradient-to-r from-[rgb(244,114,182,0.4)] p-[40px] rounded-lg relative">
+      <picture className=" absolute z-[-1] h-full bottom-0 right-0 ">
+        <Image
+          className=" object-contain w-full h-full "
+          src={srcFlower}
+          alt="flower"
+        ></Image>
+      </picture>
+      <h2
+        style={{ textShadow: "purple 0px 0px 10px" }}
+        className=" text-center text-white text-4xl my-12 shadow-lg"
+      >
         Mis habilidades técnicas
       </h2>
       <section

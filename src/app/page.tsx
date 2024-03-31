@@ -12,6 +12,8 @@ export default function Home() {
       <ContactMe></ContactMe>
       <Works></Works>
       <Skills></Skills>
+
+      
     </main>
   );
 }

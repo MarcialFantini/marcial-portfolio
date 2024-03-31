@@ -1,22 +1,30 @@
 import { Projects } from "../../../interface/projects";
 
 import ImageTop from "../../../public/image/top-image.jpg";
+import srcImageFirst from "../../../public/image/works/fasco.png";
+import srcImageSecond from "../../../public/image/works/coffe.png";
+import srcImageThird from "../../../public/image/works/lawyer.png";
+import srcImageFourt from "../../../public/image/works/shadient.png";
 
 export const projects: Projects[] = [
   {
-    img: ImageTop,
-    title: "el mejor proyecto",
+    img: srcImageFirst,
+    title: "Fasco",
+    link: "https://fasco-six.vercel.app/",
   },
   {
-    img: ImageTop,
-    title: "el mejor proyecto",
+    img: srcImageSecond,
+    title: "Coffe",
+    link: "https://coffe-three.vercel.app/",
   },
   {
-    img: ImageTop,
-    title: "el mejor proyecto",
+    img: srcImageThird,
+    title: "lawyer-my-city",
+    link: "https://lawyer-my-city.vercel.app/",
   },
   {
-    img: ImageTop,
-    title: "el mejor proyecto",
+    img: srcImageFourt,
+    title: "shadient",
+    link: "https://shadient.vercel.app/",
   },
 ];

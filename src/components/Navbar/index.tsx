@@ -10,22 +10,17 @@ import {
   NavbarItem,
   Link,
 } from "@nextui-org/react";
+import { goToElement } from "@/utils/goToElement";
 export default function NavbarComponent() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
-  const menuItems = [
-    "Profile",
-    "Dashboard",
-    "Activity",
-    "Analytics",
-    "System",
-    "Deployments",
-    "My Settings",
-    "Team Settings",
-    "Help & Feedback",
-    "Log Out",
-  ];
-
+  const menuItems = ["Inicio", "Contacto", "Trabajos", "Habilidades"];
+  const handlerGoToElement = (idElement: string) => () => {
+    setIsMenuOpen(false);
+    setTimeout(() => {
+      goToElement(idElement);
+    }, 50);
+  };
   return (
     <Navbar isBordered isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen}>
       <NavbarContent className=" flex flex-row justify-around w-auto">
@@ -47,15 +42,9 @@ export default function NavbarComponent() {
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
             <Link
+              onPress={handlerGoToElement(item)}
               className="w-full"
-              color={
-                index === 2
-                  ? "warning"
-                  : index === menuItems.length - 1
-                  ? "danger"
-                  : "foreground"
-              }
-              href="#"
+              href={"#"}
               size="lg"
             >
               {item}

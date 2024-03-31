@@ -5,7 +5,10 @@ import srcFlower from "../../../public/image/flower.png";
 
 export const Skills = () => {
   return (
-    <div className="  bg-gradient-to-r from-[rgb(244,114,182,0.4)] p-[40px] rounded-lg relative">
+    <div
+      id="Habilidades"
+      className="  bg-gradient-to-r from-[rgb(244,114,182,0.4)] p-[40px] rounded-lg relative"
+    >
       <picture className=" absolute z-[-1] h-full bottom-0 right-0 ">
         <Image
           className=" object-contain w-full h-full "

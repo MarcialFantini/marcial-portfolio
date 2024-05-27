@@ -1,10 +1,7 @@
 "use client";
 import { Button } from "@nextui-org/react";
 
-import srcTop from "../../../public/image/im/im.jpg";
-import Image from "next/image";
 import { goToElement } from "@/utils/goToElement";
-import { Suspense } from "react";
 
 export const WhoIam = () => {
   const handlerGoToContact = () => goToElement("Contacto");
@@ -40,7 +37,7 @@ export const WhoIam = () => {
             color="secondary"
             variant="shadow"
           >
-            Let's talk
+            {"Let's talk"}
           </Button>
           <Button onClick={handlerGoWorks} color="warning" variant="ghost">
             Projects

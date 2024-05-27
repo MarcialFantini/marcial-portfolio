@@ -14,7 +14,7 @@ import { goToElement } from "@/utils/goToElement";
 export default function NavbarComponent() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
-  const menuItems = ["Inicio", "Contacto", "Trabajos", "Habilidades"];
+  const menuItems = ["Home", "Contact", "Works", "Skills"];
   const handlerGoToElement = (idElement: string) => () => {
     setIsMenuOpen(false);
     setTimeout(() => {

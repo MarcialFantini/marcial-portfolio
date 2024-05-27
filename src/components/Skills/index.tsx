@@ -20,7 +20,7 @@ export const Skills = () => {
         style={{ textShadow: "purple 0px 0px 10px" }}
         className=" text-center text-white text-4xl my-12 shadow-lg"
       >
-        Mis habilidades técnicas
+   My technical skills
       </h2>
       <section
         style={{ gridTemplateColumns: "repeat(auto-fit,minmax(80px,1fr))" }}

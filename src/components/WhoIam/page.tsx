@@ -18,7 +18,7 @@ export const WhoIam = () => {
       <header className="flex flex-col items-start justify-center w-full h-full p-2 md:col-start-1 md:col-end-5">
         <h2 className=" text-2xl">Soy Marcial</h2>
         <h1 className=" my-4 text-4xl">
-          Programador{" "}
+          Developer{" "}
           <span
             // style={{ textShadow: "0px 0px 5px white" }}
             className=" text-purple-500"
@@ -28,11 +28,11 @@ export const WhoIam = () => {
         </h1>
 
         <p>
-          ¡Hola! Soy un apasionado desarrollador con 3 años de estudio en
-          programación. Mi viaje comenzó en Platzi, donde completé cursos
-          avanzados en tecnologías como React.js, Sequelize, Express, Git y
-          Redux Toolkit. Desde entonces, he estado inmerso en el mundo del
-          desarrollo web, creando una variedad de proyectos emocionantes.
+          Hi! I am a passionate developer with 3 years of studying programming.
+          My journey began at Platzi, where I completed advanced courses in
+          technologies such as React.js, Sequelize, Express, Git, and Redux
+          Toolkit. Since then, I have been immersed in the world of web
+          development, creating a variety of exciting projects.
         </p>
         <div className=" py-2 flex gap-2">
           <Button
@@ -40,23 +40,13 @@ export const WhoIam = () => {
             color="secondary"
             variant="shadow"
           >
-            Hablemos
+            Let's talk
           </Button>
           <Button onClick={handlerGoWorks} color="warning" variant="ghost">
-            Proyectos
+            Projects
           </Button>
         </div>
       </header>
-
-      <picture className=" overflow-hidden w-full h-full rounded-md col-start-5 col-end-7">
-        <Suspense>
-          <Image
-            className=" w-full h-full object-cover"
-            alt="img top"
-            src={srcTop}
-          ></Image>
-        </Suspense>
-      </picture>
     </article>
   );
 };

@@ -14,15 +14,16 @@ export const Works = () => {
         style={{ textShadow: "0px 0px 20px purple" }}
         className=" text-4xl text-white text-center m-[40px] "
       >
-        Mis últimos proyectos
+        My recent projects
       </h2>
-      <div className=" grid md:grid-cols-2 gap-4">
+      <section className=" grid md:grid-cols-2 gap-4">
         {projects.map((project, index) => {
           return (
             <Link
               target="_blank"
               href={project.link}
               key={project.title + index}
+              className=" "
             >
               <article className=" max-h-[600px] border-black border-x-2 border-y-2 relative flex items-start justify-start overflow-hidden rounded-2xl">
                 <h4 className=" absolute p-4 bg-[rgb(0,0,0,0.2)] backdrop-blur-sm w-full text-center z-10 text-base">
@@ -38,7 +39,7 @@ export const Works = () => {
             </Link>
           );
         })}
-      </div>
+      </section>
     </section>
   );
 };

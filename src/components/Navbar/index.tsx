@@ -14,13 +14,20 @@ import { goToElement } from "@/utils/goToElement";
 export default function NavbarComponent() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
-  const menuItems = ["Home", "Contact", "Works", "Skills"];
+  const menuLinks = {
+    Home: "Inicio",
+    Contact: "Contacto",
+    Works: "Trabajos",
+    Skills: "Habilidades",
+  };
   const handlerGoToElement = (idElement: string) => () => {
+    console.log(idElement);
     setIsMenuOpen(false);
     setTimeout(() => {
       goToElement(idElement);
     }, 50);
   };
+
   return (
     <Navbar isBordered isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen}>
       <NavbarContent className=" flex flex-row justify-around w-auto">
@@ -39,15 +46,15 @@ export default function NavbarComponent() {
       </NavbarContent>
 
       <NavbarMenu>
-        {menuItems.map((item, index) => (
-          <NavbarMenuItem key={`${item}-${index}`}>
+        {Object.entries(menuLinks).map((item, index) => (
+          <NavbarMenuItem key={`${item[0]}-${index}`}>
             <Link
-              onPress={handlerGoToElement(item)}
+              onPress={handlerGoToElement(item[1])}
               className="w-full"
               href={"#"}
               size="lg"
             >
-              {item}
+              {item[0]}
             </Link>
           </NavbarMenuItem>
         ))}

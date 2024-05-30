@@ -2,6 +2,13 @@
 import { Button } from "@nextui-org/react";
 
 import { goToElement } from "@/utils/goToElement";
+const pdfPath = "./marcial_fantini_full_stack.pdf";
+const handleDownload = (pdfPath: string) => {
+  // Ruta al archivo PDF en la carpeta public
+
+  // Abrir el PDF en una nueva pestaña para descargar
+  window.open(pdfPath, "_blank");
+};
 
 export const WhoIam = () => {
   const handlerGoToContact = () => goToElement("Contacto");
@@ -41,6 +48,9 @@ export const WhoIam = () => {
           </Button>
           <Button onClick={handlerGoWorks} color="warning" variant="ghost">
             Projects
+          </Button>
+          <Button variant="ghost" onClick={() => handleDownload(pdfPath)}>
+            Download CV
           </Button>
         </div>
       </header>

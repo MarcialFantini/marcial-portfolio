@@ -1,9 +1,9 @@
 import { Projects } from "../../../interface/projects";
 
-import srcImageFirst from "../../../public/image/works/fasco.png";
-import srcImageSecond from "../../../public/image/works/coffe.png";
-import srcImageThird from "../../../public/image/works/lawyer.png";
-import srcImageFourt from "../../../public/image/works/shadient.png";
+import srcImageFirst from "../../../public/image/works/fasco.webp";
+import srcImageSecond from "../../../public/image/works/coffe.webp";
+import srcImageThird from "../../../public/image/works/lawyer.webp";
+import srcImageFourt from "../../../public/image/works/shadient.webp";
 
 export const projects: Projects[] = [
   {

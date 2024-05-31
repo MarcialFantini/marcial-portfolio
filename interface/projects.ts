@@ -4,4 +4,5 @@ export interface Projects {
   title: string;
   img: string | StaticImageData;
   link: string;
+  description: string;
 }
